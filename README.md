@@ -12,4 +12,4 @@ Node.js, Express, MongoDB, HTML, CSS, JavaScript
 ## How to run
 1. npm install
 2. node server.js
-3. Open http://localhost:3000
+3. Open http://localhost:568
