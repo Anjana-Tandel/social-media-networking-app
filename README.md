@@ -7,7 +7,7 @@ Node.js, Express, MongoDB, HTML, CSS, JavaScript
 - User authentication
 - Profile management
 - Post creation
-- Password reset functionality
+- Notification System
 
 ## How to run
 1. npm install
