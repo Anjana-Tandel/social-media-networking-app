@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <link rel="stylesheet" href="registration.css"></link>
+</head>
+<body>
+    <div id="header-left">
+        <i class="fas fa-fire"></i>
+        <span>ConnectHub</span>
+    </div>
+    <div id="header-right">
+        <i class="fas fa-bell"></i>
+        <span>Stay Connected</span>
+    </div>
+
+    <div class="container">
+    <p><b>Ready to Sign up ? </b>Just a few steps way from joining a community built for you.....!</p>
+
+    <form id="signUp_container" enctype="multipart/form-data">
+        <div id="first_container" class="step active_class " class="divs">
+            <h1>Lets's start with the basics</h1>
+            <p class="form_text">Enter your name,unique username and email</p>
+            <label>
+                Fullname:
+                </label>
+                <input type="text"required="true" id="Fullname" class="input_box" placeholder="Enter your name">
+            <i class="fas fa-user-edit" id="fname"></i>
+                <label>Username:</label>       
+                <input type="text"required="true" id="Username" class="input_box" placeholder="Create Your Username">
+                <i class="fa-solid fa-user" id="uname"></i>
+                
+                <label>Email:</label>
+                <input type="email"required="true" id="mail" class="input_box" placeholder="Enter Your Email">
+        <i class="fa fa-envelope" id="uemail"></i>
+
+                <div id="next_container">
+            <button type="button" class="back_login"><a href="index.html">Back To Login</a></button>
+
+                <button class="next" id="next1" type="button">Next</button>
+
+                </div>
+    </div>
+    
+    <div id="second_container" class="step">
+        <h1>Secure your account</h1>
+        <p class="form_text">Create a strong password that you'll remember. </p>
+        <label>Set Password:</label>
+            <input type="password"  required="true" id="Password" class="input_box" placeholder="Enter Your Password">
+            <label>Confirm Password:</label>
+            <input type="password"  required="true" id="confirmPassword" class="input_box" placeholder="Confirm Your Password">
+            <div id="next_container">
+            <button type="button" class="back">Back</button>
+            <button type="button" id="next2" class="next">Next</button>
+            </div>
+
+    </div>
+    
+
+    <div id="third_container" class="step">
+        <h2>Personalize your profile</h2>
+        <p class="form_text">Tell us more - gender and birthdate.</p>
+        <label>D.O.B:</label>
+        <input type="date" id="dob" class="input_box" placeholder="Enter Your D.O.B">  
+
+        <label id="gender_label">Gender:</label>    
+    <div id="label_container">
+        <label>Male<input type="radio" name="Gender" value="male" class="gender"></label>
+        <label>Female<input type="radio" name="Gender" value="female" class="gender"></label>
+        <label>Other<input type="radio" name="Gender" value="other" class="gender"></label>
+    </div> 
+    <div id="next_container">
+
+    <button type="button" class="back">Back</button>
+    <button id="Sign-Up" type="submit">Sign Up</button>
+    </div>
+    </div>
+ 
+    </form>
+    </div>
+
+    <form class="profile_setUp"enctype="multipart/form-data">
+        <div id="bio_container" class="ProfileStep active">
+            <h1>Personalize your space before you join the community....</h1>
+            <p class="form_text">Introduce yourself with short and sweet bio</p>
+            <div class="info_container">
+                <label>Your Bio:</label>
+                <textarea id="bio" placeholder="Tell Us More About Yourself....."></textarea>
+                <small>Write a short bio(max 150 characters)</small>
+            </div>
+                
+            <div id="next_container">
+                <button type="button" class="back_btn disabled_btn" disabled>Previous</button>
+                <button type="button" class="next_btn">Next</button>
+            </div>
+        </div>
+        <div id="profilePic_container" class="ProfileStep">
+            <h1>Almost there! Add your profile pic and tell us a bit about yourself.</h1>
+            <p class="form_text">Your profile,your vibe-set it right!</p>
+            <label>Choose Your Profile Picture :</label>
+            
+            <div class="info_container">
+                <label for="profilePic" >
+                <img src="uploads/profiles/default.jpg" class="set_profilePic" id="profile_pic"style="opacity:0.3">
+                <i class="fas fa-camera"></i>
+
+                </label>
+            <input type="file" id="profilePic" name="profilePic" accept="image/*" style="display:none;">
+            <small>Make it pop! This is how people will see you.</small>
+            </div>
+            
+            <div id="next_container">
+                <button type="button" class="back_btn">Previous</button>
+                <button type="button" class="next_btn">Next</button>
+            </div>
+        </div>
+
+        <div id="coverPhoto_container" class="ProfileStep">
+            <h1>Pick a cover photo that defines your vibe.</h1>
+            <label >Choose Your Cover-Pic:</label>
+
+            <div class="info_container" id="set_coverPic">
+                <label for="coverPic">
+                <img src="" style="opacity:0.3" id="cover_pic">
+                <i class="fas fa-camera"></i>
+                </label>
+            <input type="file" id="coverPic" name="profilePic" accept="image/*" style="display: none;">
+            <small>Your cover photo sets the vibe. Choose wisely!</small>
+            </div>
+
+
+            <div id="next_container">
+                <button type="button" class="back_btn">Previous</button>
+        <button type="submit" id="get_started">Get Started</button>
+            </div>
+        </div>
+        
+
+    </form>
+    <script src="registration.js"></script>
+</body>
+</html>

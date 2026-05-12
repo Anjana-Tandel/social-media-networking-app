@@ -1,0 +1,10 @@
+img{
+height:100px;
+width:100px;
+}
+.info_container label{
+    position: relative;
+}
+ .info_container i{
+    font-size: 200px;
+ }

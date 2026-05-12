@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <nav>
+        <div class="hedding_div">
+            <i class="fas fa-fire"></i>
+        <h4>ConnectHub</h4>
+        </div>
+    <div id="search_container">
+        <div id="search_icon">
+            <i class="fa-solid fa-search" id="search"></i>
+        </div>
+    <input type="text" placeholder="Search For The Users...." id="search_users">
+    </div>
+    
+    <div class="post-profile">
+        <button class="create_button logout">Logout</button>
+    <img class="profilePic">
+    </div>
+    </nav>
+    <div class="container">
+
+        <div id="first_container" class="inside_container">
+
+            <div class="profile_container" class="flex_property">
+
+                <img class="profilePic">
+
+                <div class="flex_property" id="name_id">
+                    <h4 id="h4_tag"></h4>
+                    <h5 id="h5_tag"></h5>
+                </div>
+
+            </div>
+            <div class="dropDown_menus">
+                <ul>
+                    <li class="menu-item active"><i class="fa-solid fa-house" ></i><span>Home</span></li>
+                    <li class="menu-item"><i class="fa-solid fa-user"></i>Profile</li>
+                    <li class="menu-item"><i class="fa-solid fa-bell"></i>Notifications</li>
+                    <li class="menu-item"><i class="fa-solid fa-search"></i>Search</li>
+                    <li class="menu-item"><i class="fa-solid fa-bookmark"></i>BookMarks</li>
+                    <li class="menu-item logout"><i class="fa-solid fa-right-from-bracket"></i>Logout</li>
+                </ul>
+            <button class="create_button" id="create_post">View Profile</button>
+                
+            </div>
+
+        </div>
+    
+        <div  id="second_container" class="inside_container">
+            <div class="post_container">
+                <form id="createPostForm" enctype="multipart/form-data">
+                    <div id="text_area">
+                        <img class="profilePic">      
+                    <textarea id="caption" placeholder="Post Anything....." required="true"></textarea>
+                    </div>
+                    <div id="show_images">
+                            
+                    </div>
+                    <div id="media_btn">
+                        <label id="upload" for="mediaInput">
+                        <i class="fas fa-photo-video"></i><label>Upload Images / Videos</label>
+                        <input type="file" id="mediaInput" name="mediaFiles" multiple hidden accept="image/*,video/*">
+                        </label>
+                        <button type="submit" class="create_button" class="send_post" >Post</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="timeline_posts" class="show_posts">
+
+            </div> 
+            <div id="user_posts" class="show_posts" class="user_profile_page" style="display:none"></div>
+
+        </div >
+        <!----<video controls width="500" height="500" id="videos">
+        </video>---->
+        <div id="third_container"class="inside_container">
+    
+        </div>
+
+    </div>
+    
+
+    <img class="coverPic" style="display: none;">
+
+    <script src="profile.js"></script>
+</body>
+</html>
